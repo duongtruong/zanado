@@ -1,0 +1,5 @@
+B1: Import database tu file database.sql
+B2: Thay doi cac config tuong ung trong file ./application/config/config.php
+    + Line 25: base_url
+B3: Thay doi thong tin db trong file ./application/config/database.php (user, pass, db)
+B4: Phan quyen 777 cho thu muc ./public/uploads

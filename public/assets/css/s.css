@@ -1,0 +1,146 @@
+@charset "utf-8";
+* { margin:0; padding:0; }
+
+/*=========navigation-menu======*/
+.navigation-menu{height:36px; line-height:0;width:100%;}
+.navigation-menu .menu-top, .nav-containersub {height: 35px; margin: 0 auto; position: relative; width: 100%; z-index: 10; border-top:1px solid #eee;}
+.nav-containersub{ z-index:9; margin:0 auto; background:#f07b00; display:none;}
+.nav-containersub.show, .nav-containersub.showhide{ display:block;}
+.hidesub .nav-containersub.show{ display:none;}
+.navigation-menu.scrollpage .menu-top .nav-container .nav-container-menu li.active .level2{display:none;}
+.navigation-menu.scrollpage .menu-top .nav-container .nav-container-menu li:hover .level2, .navigation-menu.scrollpage .menu-top .nav-container .nav-container-menu li.hover .level2{display:block; border-bottom: none}
+.navigation-menu .menu-top .nav-menu-danhmuc{float:left; width: 180px; height: 35px; position:relative; background-position: 0 -438px;}
+.navigation-menu .menu-top .nav-menu-title {color: #FFFFFF; cursor: pointer; display: block; font-size: 13px; font-weight: bold; height: 33px; left: 0; position: absolute; top: 5px; width: 100%; line-height: 28px;}
+.navigation-menu .menu-top .nav-menu-title a{color:#fff;}
+.navigation-menu .menu-top .nav-menu-title .menutile{line-height:35px; margin-top:5px; background-color:#ededd7;}
+.navigation-menu .menu-top .nav-hori {margin-left: 200px; position: relative; _margin-left:10px; _width:780px;}
+.navigation-menu .menu-top .nav-hori-menu {left: 0; position: absolute;}
+.navigation-menu .menu-top .nav-hori-menu li {background: url("../images/line-nav.gif") no-repeat scroll right center; display: inline; float: left; height: 39px; line-height: 39px; padding: 0 10px;}
+.navigation-menu .menu-top .nav-hori-menu li a {color: #FFFFFF; font-size: 13px; font-weight: bold; position: relative; white-space:nowrap;}
+.navigation-menu .menu-top .nav-hori-menu li.last {background: none repeat scroll 0% 0% transparent;}
+.navigation-menu .menu-top .nav-hori-menu li.active a,.navigation-menu .menu-top .nav-hori-menu li a:hover{ color:#ffe100;}
+.navigation-menu .menu-top .box-right-navigation {position: absolute; right: 0; top: 0;}
+
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children {background:#ffc47e; float: left; left: 0; list-style: none outside none;  margin: 0; padding: 0 0 1px; position: absolute; top: 35px; width: 100%; z-index: 99; text-align:left; line-height:30px;}
+.home-index-index .navigation-menu .menu-top .nav-menu-danhmuc ul.children {/* height:250px; overflow:hidden; */}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li{padding:3px 5px 3px 10px; margin: 0; background-position: 0 -327px;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li.hover{background: url("../images/ico-hover-menu.png") no-repeat scroll right center #fff;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li.hover a{color:#ff000a;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children a{color:#000; font-weight:bold; padding:5px 0 5px 28px; background-repeat:no-repeat;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li.line {background: url("../images/bg-line-menu-catalog.jpg") no-repeat scroll center center; height: 2px; line-height:2px;	*background: url("../images/bg-line-menu-catalog.jpg") no-repeat scroll 0 0;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children .linefirst{height:6px; line-height:6px; _height:0; _line-height:0;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children .linebottom{height:10px; line-height:10px; *background:none;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children1 {
+	background:#ffffe7;
+    border: 1px solid #d9d9d9;
+    display: none;
+    float: left;
+    left: 180px;
+	_left: 180px;
+    list-style: square inside;
+    margin: 0;
+    padding: 0 10px 5px;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    z-index: 99;	
+	-moz-border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	border-radius:0 5px 5px 0;
+	border-left:0;
+}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li ul.children1 li{background:transparent;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li ul.children1 a{color:#000; padding-left:5px; line-height:25px;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li ul.children1 li:hover{ list-style-color: #ff000a; color:#ff000a;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li ul.children1 li:hover a,.navigation-menu .menu-top .nav-menu-danhmuc ul.children li ul.children1 a:hover{ color:#ff000a;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children div.children1{min-height:242px; width:827px; position: absolute; top: 0; z-index: 99;	left: 180px;_left: 170px; -moz-border-radius: 0 0 5px 0; -webkit-border-radius: 0 0 5px 0; border-radius:0 0 5px 0; border: 1px solid #ffc47e; border-top:0; background:#fff; display: none; margin: 0; padding:5px 0; -webkit-box-shadow:3px 3px 10px #666; -moz-box-shadow:3px 3px 10px #666; box-shadow:3px 3px 10px #666;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children div.children1 .spear{float:left; max-width:180px;overflow:hidden;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children div.children1 a{color: #000000; padding:0;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li div.children1 .subviewmenu{min-width:120px; padding: 5px 10px 5px 28px; line-height:20px;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li div.children1 .subviewmenu .childclass{ font-weight:bold; display:block;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li div.children1 .subviewmenu .childclass a{font-weight:bold;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li div.children1 .subviewmenu .childdetail{ font-weight:normal; padding: 0 0 0 10px; clear:both}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li div.children1 .subviewmenu .childdetail .link-site-more{display:inline; position:relative;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li div.children1 .subviewmenu .childdetail span{ margin:0 3px;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li div.children1 .subviewmenu .childdetail a{white-space:nowrap; font-weight:normal; color:#006fc0; display:block;}
+.navigation-menu .menu-top .nav-menu-danhmuc ul.children li div.children1 .subviewmenu a:hover{color:#ff000a;}
+
+.navigation-menu-block{_overflow:hidden; margin-bottom: -9px}
+.navigation-menu-block.scrollpage{background:#fff;}
+.navigation-menu .menu-top .nav-container .nav-container-menu{height:48px; overflow:hidden;}
+.navigation-menu .menu-top .nav-container .nav-container-menu li{display: inline; float: left; line-height: 35px;/*  height:36px; */}
+.navigation-menu .menu-top .nav-container .nav-container-menu li .menucenter{ position:relative; display:block; *position:inherit; }
+.navigation-menu .menu-top .nav-container .nav-container-menu li a{ text-transform:uppercase; color:#000; font-size: 17px; font-weight:bold; white-space:nowrap; display:block; padding: 0 7px; min-width:35px;}
+.navigation-menu .menu-top .nav-container .nav-container-menu li.left a{font-size:17px; padding:0 10px;}
+.navigation-menu .menu-top .nav-container .nav-container-menu li.right a{color:#555;font-size:12px;}
+.navigation-menu .menu-top .nav-container .nav-container-menu li.active .menucenter a, .navigation-menu .menu-top .nav-container .nav-container-menu li.hover .menucenter a, .navigation-menu .menu-top .nav-container .nav-container-menu li:hover .menucenter a{background:#000; color:#fff; border-radius:4px 4px 0 0;}
+.navigation-menu .menu-top .nav-container .nav-container-menu li.active a, .navigation-menu .menu-top .nav-container .nav-container-menu li.hover a, .navigation-menu .menu-top .nav-container .nav-container-menu li a:hover{ background-color:#000;color:#fff; border-radius:4px 4px 0 0;}
+.navigation-menu .menu-top .nav-container .nav-container-menu li a.sprites:hover{background-color:#000;}
+.navigation-menu .menu-top .nav-container .nav-container-menu li.active .menucenter:before, .navigation-menu .menu-top .nav-container .nav-container-menu li.hover .menucenter:before, .navigation-menu .menu-top .nav-container .nav-container-menu li:hover .menucenter:before{position:absolute;display:inline-block;border-right:11px solid transparent;border-bottom:8px solid #fff;border-left:11px solid transparent;border-bottom-color:rgba(0,0,0,0.2);content:'';bottom:-2px;left:50%;margin-left:-11px;}
+
+.navigation-menu .menu-top .nav-container .nav-container-menu li.active .menucenter:after, .navigation-menu .menu-top .nav-container .nav-container-menu li.hover .menucenter:after, .navigation-menu .menu-top .nav-container .nav-container-menu li:hover .menucenter:after{position:absolute;bottom:-2px;left:50%;margin-left:-10px;display:inline-block;border-right:10px solid transparent;border-bottom:7px solid #fff;border-left:10px solid transparent;content:''; z-index:999;}
+
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2{position:absolute; display:none; width:100%; height:36px; background:#fff; top:35px; left:0; border-top:2px solid #000; border-bottom: 2px solid #dc0309;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 li{padding:0; height:33px; line-height:32px;/*position:relative;*/}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 li a{text-transform:none;color:#000;background:#fff; font-size:13px; font-weight:normal;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 li a:hover{}
+/*.navigation-menu .menu-top .nav-container .nav-container-menu li.active .level2, */.navigation-menu .menu-top .nav-container .nav-container-menu li:hover .level2, .navigation-menu .menu-top .nav-container .nav-container-menu li.hover .level2{ display:block}
+.navigation-menu .menu-top .nav-container .nav-container-menu li.hover, .navigation-menu .menu-top .nav-container .nav-container-menu li:hover{ z-index:99;}
+.navigation-menu .menu-top .nav-container .nav-container-menu li.hover .level2, .navigation-menu .menu-top .nav-container .nav-container-menu li:hover .level2{ z-index:99;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 li.active, .navigation-menu .menu-top .nav-container .nav-container-menu .level2 li.hover, .navigation-menu .menu-top .nav-container .nav-container-menu .level2 li:hover{ background:#fff;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 li.active a{color:#dc0309;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 li.hover a, .navigation-menu .menu-top .nav-container .nav-container-menu .level2 li:hover a{ color:#000; background:transparent; border-bottom:3px solid #dc0309;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec{ position:absolute; top:34px; left: 0px; display:none; width: 350px; background:#fff; border-color: #dc0309; border-style: solid; border-width: 0 0 2px 0; width:100%; min-height:270px; _top:95%;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec:after{clear:both;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec .nav-menu-col{float:left; text-align:left;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec .nav-menu-col1{width:200px; margin-left:5px; _overflow:hidden;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec .nav-menu-col2{width:790px; float:right; margin:10px 5px; _overflow:hidden; _margin:10px 0;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec .nav-menu-col h3{ padding:8px 0 3px 8px; font-size:1.2em; margin-bottom:0px}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .level3{ margin:0 0 5px 0;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .level3 li{ float:none; height:auto; line-height:1.4em;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 li.hover .nav-layerSpec, .navigation-menu .menu-top .nav-container .nav-container-menu .level2 li:hover .nav-layerSpec{ display:block;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec a{ background:none; font-weight:normal;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec a:hover{ color:#ca0000; border:0;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .productnewhead li{float:left; width:142px; margin-left:15px; _margin-left:13px; _width:140px;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .productnewhead li a{ white-space:normal; text-align:center; padding-top:5px;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .productnewhead li a.product-img{padding:0; border:0;font-size:12px;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .productnewhead li img{width:100%; border:1px solid #ddd; display:block; margin-bottom:10px;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec .cat-menu-sub-show{ width:100%; display:block;}
+.navigation-menu .menu-top .nav-container .nav-container-menu .level2 .nav-layerSpec .cat-menu-sub-show a{display:inline; border:0; font-size:12px;}
+
+/*---------navigation-menu---------------*/
+/* Options Tool Tip */
+.item-options dt { font-weight:bold; font-style:italic; }
+.item-options dd { padding-left:30px; }
+.truncated { cursor:help; }
+.truncated a.dots { cursor:help; text-decoration:none !important; }
+.truncated a.details { cursor:help; text-decoration:none !important; display:inline-block; border-bottom:1px dotted #4f8100; }
+.truncated .truncated_full_value { position:relative; z-index:999; }
+.truncated .truncated_full_value dl { position:absolute; top:-99999em; z-index:999; width:250px; padding:8px; border:2px solid #ddd; border-bottom-color:#666; background-color:#f6f6f6; }
+.truncated .truncated_full_value dt { margin-right:5px; }
+.truncated .show dl { top:-20px; left:50%; }
+.col-left .truncated .show dl { left:30px; top:10px; }
+.col-right .truncated .show dl { left:-240px; top:10px; }
+/* ======================================================================================= */
+
+.f-right, .right {
+    float: right !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.nav-layerSpec h3 {
+	font-weight: bold;
+	margin: 0;
+}
+
+.level3 a {
+	-webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.level3 a:hover {
+	color: #dc0309;
+}
